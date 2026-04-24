@@ -1,0 +1,242 @@
+nav {
+  background-color: #f5f5dc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9vh;
+  color: black;
+  padding: 0 3vw;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #796348;
+}
+nav a {
+  text-decoration: none;
+  color: #111111;
+}
+.hero {
+  background: url(./assets/herobg-removebg-preview.png);
+  background-color: rgb(245, 245, 220, 0.8);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-position: bottom;
+  /* height: 90vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20vh 5vw;
+  /* align-items: center; */
+}
+.hero h1 {
+  font-size: 65px;
+  letter-spacing: 0;
+}
+.hero div {
+  /* width: 40vw; */
+}
+.section-2 {
+  /* height: 100vh; */
+  padding: 15vh 2vw;
+}
+.section-2 a {
+  text-decoration: none;
+}
+
+.knitwear {
+  background: url(./assets/knitwear.png);
+  background-size: cover;
+  background-color: rgb(0, 0, 0, 0.1);
+  background-position: center;
+  border-radius: 18px;
+  background-blend-mode: overlay;
+  padding: 0vh 2vw;
+  cursor: pointer;
+  height: 500px;
+  width: 30vw;
+}
+.tailoring {
+  background: url(./assets/tailoring.png);
+  background-size: cover;
+  background-color: rgb(0, 0, 0, 0.1);
+  background-position: center;
+  border-radius: 18px;
+  background-blend-mode: overlay;
+  padding: 0vh 2vw;
+  cursor: pointer;
+  height: 500px;
+  width: 30vw;
+}
+.accesories {
+  background: url(./assets/accesories.png);
+  background-size: cover;
+  background-color: rgb(0, 0, 0, 0.1);
+  background-position: center;
+  border-radius: 18px;
+  background-blend-mode: overlay;
+  padding: 0vh 2vw;
+  cursor: pointer;
+  height: 500px;
+  width: 30vw;
+}
+.accesories:hover {
+  .shopnow {
+    display: block;
+  }
+  animation: grow 0.3s ease-in forwards;
+}
+.knitwear:hover {
+  .shopnow {
+    display: block;
+  }
+
+  animation: grow 0.3s ease-in forwards;
+}
+.tailoring:hover {
+  .shopnow {
+    display: block;
+  }
+  animation: grow 0.3s ease-in forwards;
+}
+.shopnow {
+  display: none;
+  font-size: 18px;
+}
+.featured-ess {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: #f5f5dc;
+  padding-top: 10vh;
+  /* height: 100vh; */
+}
+.featured{
+  display: flex;
+  justify-content: center;
+  gap: 4vw;
+  padding-top: 10vh;
+}
+.cotton-tee {
+  background: url(./assets/cotton-tee.png);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  height: 500px;
+  width: 20vw;
+  background-color: rgb(0, 0, 0, 0.3);
+  border-radius: 20px;
+  background-blend-mode: overlay;
+  padding: 20px 20px;
+}
+.wide-trouser {
+  background: url(./assets/wide-trousers.png);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  height: 500px;
+  width: 20vw;
+  background-color: rgb(0, 0, 0, 0.3);
+  background-blend-mode: overlay;
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+.crewneck {
+  background: url(./assets/crewneck.png);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  height: 500px;
+  width: 20vw;
+  background-color: rgb(0, 0, 0, 0.3);
+  background-blend-mode: overlay;
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+.crossbody {
+  background: url(./assets/crossbody.png);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  height: 500px;
+  width: 20vw;
+  background-color: rgb(0, 0, 0, 0.3);
+  background-blend-mode: overlay;
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+.like{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:white !important;
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 50%;
+  align-self: flex-end;
+}
+.featured button{
+  background-color:#111111;
+  color: white;
+  border: none;
+}
+.feat-item:hover{
+ .add{
+  display: block !important;
+  
+ }
+ .like{
+  display: block !important;
+ 
+ }
+}
+
+@keyframes grow {
+  0% {
+  }
+
+  50% {
+    transform: translateY(-4px);
+    /* background-size: 110%; */
+  }
+  100% {
+    transform: translateY(-4px);
+    /* background-size: 120%; */
+    scale: 1.01;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 770px) {
+  .div-img {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .knitwear {
+    width: 80vw;
+    background-position: center;
+  }
+  .tailoring {
+    width: 80vw;
+    background-position: center;
+  }
+  .accesories {
+    width: 80vw;
+    background-position: center;
+  }
+  .featured{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    align-self: center;
+  }
+  .feat-item{
+    width: 80vw;
+    background-position: center;
+  }
+}
+
+/* @media screen and (min-width:771px) and (max-width:) {
+    
+} */
