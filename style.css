@@ -15,6 +15,16 @@ nav a {
   text-decoration: none;
   color: #111111;
 }
+.cart-number{
+  width: 20px;
+  height: 20px;
+  background-color: #DEB887;
+  /* color: white; */
+  border-radius: 50%;
+  right: 0;
+  top: 0;
+  
+}
 .hero {
   background: url(./assets/herobg-removebg-preview.png);
   background-color: rgb(245, 245, 220, 0.8);
@@ -109,10 +119,12 @@ nav a {
   flex-direction: column;
   background-color: #f5f5dc;
   padding-top: 10vh;
+  padding-bottom: 10vh;
   /* height: 100vh; */
 }
 .featured{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
   gap: 4vw;
   padding-top: 10vh;
@@ -165,6 +177,54 @@ nav a {
   border-radius: 20px;
   padding: 20px 20px;
 }
+.black-shirt{
+    background: url(./assets/black-tshirt.png);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  height: 500px;
+  width: 20vw;
+  background-color: rgb(0, 0, 0, 0.3);
+  background-blend-mode: overlay;
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+.relaxed-tee{
+      background: url(./assets/relaxed-tee.png);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  height: 500px;
+  width: 20vw;
+  background-color: rgb(0, 0, 0, 0.3);
+  background-blend-mode: overlay;
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+.jacket{
+  background: url(./assets/jacket.png);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  height: 500px;
+  width: 20vw;
+  background-color: rgb(0, 0, 0, 0.3);
+  background-blend-mode: overlay;
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+.sleeve{
+  background: url(./assets/sleeve.png);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  height: 500px;
+  width: 20vw;
+  background-color: rgb(0, 0, 0, 0.3);
+  background-blend-mode: overlay;
+  border-radius: 20px;
+  padding: 20px 20px;
+}
 .like{
   display: flex;
   justify-content: center;
@@ -181,6 +241,9 @@ nav a {
   color: white;
   border: none;
 }
+.feat-item{
+  width: 100%;
+}
 .feat-item:hover{
  .add{
   display: block !important;
@@ -191,7 +254,60 @@ nav a {
  
  }
 }
-
+footer{
+ background-color: #111111;
+ /* height: 80vh; */
+}
+.footer-main{
+  /* height: 80vh; */
+  width: 100%;
+  color: #A0A0A0;
+  justify-content: space-between;
+  padding: 10vh 5% !important;
+}
+footer a {
+  text-decoration: none;
+  color: #A0A0A0;
+}
+footer h6{
+  color: #DEB887;
+}
+.foot-cont{
+  width: 20vw;
+}
+.email-input{
+  padding: 10px;
+  background-color:#1c1c1b;
+  border: 1px solid gray;
+  border-radius: 8px;
+  width: 100%;
+  color: #A0A0A0;
+}
+.icon-div{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#1c1c1b;
+  cursor: pointer;
+}
+.footer-btn{
+  background-color: #DEB887;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+}
+.line{
+  height: 1px;
+  width: 90%;
+  background-color: gray;
+}
+.copy{
+  width: 80%;
+  color: #A0A0A0;
+}
 @keyframes grow {
   0% {
   }
@@ -235,8 +351,7 @@ nav a {
     width: 80vw;
     background-position: center;
   }
+  .foot-cont{
+    width: 100%;
+  }
 }
-
-/* @media screen and (min-width:771px) and (max-width:) {
-    
-} */
